@@ -1,0 +1,12 @@
+p{
+  font-family : Arial;
+}
+.thumbnail-1{
+  width : 300px;
+  display : block;
+}
+.title{
+  width : 300px;
+  font-weight : bold;
+  line-height : 20px;
+}
