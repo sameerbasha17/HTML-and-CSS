@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- TASK : Create a grid with 5 equal columns that take up the entire page. Space between columns = 20px, space between rows = 10px. -->
+<html>
+  <head>
+    <title>11c exercise </title>
+    <style>
+      .example-grid{
+        display : grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row-gap :10px;
+        grid-column-gap : 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="example-grid">
+      <div style="background-color : lightpink">col 1</div>
+      <div style="background-color : lightpink">col 2</div>
+      <div style="background-color : lightpink">col 3</div>
+      <div style="background-color : lightpink">col 4</div>
+      <div style="background-color : lightpink">col 1</div>
+      <div style="background-color : lightpink">col 2</div>
+      <div style="background-color : lightpink">col 3</div>
+      <div style="background-color : lightpink">col 4</div>
+    </div>
+  </body>
+</html>
