@@ -5,17 +5,18 @@
     <style>
       .grid{
         display : grid;
-        grid-template-columns :150px 150px 150px;
+        grid-template-columns :200px 200px 200px;
         grid-column-gap: 12px;
       }
       .profile-picture{
-        width : 100%;
+        width : 200px;
+        margin-bottom : 5px;
       }
       .name{
         font-family : Arial;
         font-weight : bold;
         margin-top : 6px;
-        margin-bottom : 4px;
+        margin-bottom : 8px;
         margin-left : 6px;
       }
       .mutual-friends{
@@ -36,22 +37,25 @@
         border-radius : 7px;
         color : white;
         font-weight : bold;
-        margin-left : 6px;
-        margin-top :10px;
+        margin-left : 8px;
       }
       .profile{
         box-shadow : 0 0px 6px rgba(0,0,0,0.2);
-        padding-bottom : 7px;
+        padding-bottom : 17px;
+        margin-top:20px;
       }
       .profile-logo{
         width : 80%;
         object-fit : cover;
         border-radius : 25px;
-        margin-left : 5px;
+        margin-left : 6px;
+        vertical-align : middle;
       }
       .mutual-friends-row{
         display : grid;
         grid-template-columns: 30px 1fr;
+        margin-bottom : 8px;
+        align-items : center;
       }
     </style>
   </head>
