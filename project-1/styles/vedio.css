@@ -1,0 +1,43 @@
+.grid{
+  display : grid;
+  grid-template-columns : 300px 300px 300px;
+  column-gap : 17px;
+  row-gap : 40px;
+}
+.thumbnail{
+  width : 100%;
+}
+.thumbnail-div{
+  margin-bottom : 8px;
+  background-color: rgb(216, 30, 30);
+}
+.sub-grid{
+  display : grid;
+  grid-template-columns : 50px 1fr;
+  column-gap : 7px;
+}
+.profile-row{
+  margin-left : 3px;
+}
+.title{
+  margin-top :0px;
+  margin-bottom : 8px;
+  font-weight : bold;
+  font-size : 14px;
+}
+.author{
+  color : rgb(100,100,100);
+  font-size : 12px;
+}
+.stats{
+  color : rgb(100,100,100);
+  font-size : 12px;
+}
+.vedio{
+width : 100%;
+}
+.profile{
+  width : 80%;
+  object-fit : cover;
+  border-radius:20px;
+}
