@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--Task (15e+15f) : Create a design with overlay and elements using position : absolute,relative... -->
+<html lang="en">
+  <head> 
+    <title> 15e exercise </title>
+    <style>
+      .shirt-container{
+        position : relative;
+        width : 200px;
+      }
+
+      .shirt-img{
+        width : 200px;
+      }
+      .offer{
+        background-color : black;
+        color : white;
+        font-size : 14px;
+        font-family : Arial;
+        position : absolute;
+        padding-top : 4px;
+        padding-left : 6px;
+        padding-bottom :4px;
+        padding-right : 6px;
+        top : 8px;
+        right : 0;
+      }
+      
+      .overlay{
+        background-color :rgba(255, 255, 255,0.7);
+        position : absolute;
+        bottom : 0;
+        height : 100px;
+        width :  200px;
+        display : flex;
+        align-items : center;
+        justify-content : center;
+      }
+      .btn{
+        background-color : white;
+        border-width : 1px;
+        border-style : solid;
+        padding-top : 4px;
+        padding-left : 6px;
+        padding-bottom : 4px;
+        padding-right : 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shirt-container">
+      <img src="shirt.jpeg" alt="shirt img" class="shirt-img">
+      <div class="offer"> 20% OFF </div>
+      <div class="overlay">
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>
