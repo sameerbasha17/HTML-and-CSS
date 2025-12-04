@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- TASK : overlay -->
+<html lang="en">
+  <head>
+    <title> 14d exercise </title>
+    <style>
+      body{
+        height : 3000px;
+      }
+      .left-sidebar{
+        background-color : green;
+        color : white;
+        position : fixed;
+        top : 0;
+        left :0;
+        bottom : 0;
+        width : 100px;
+      }
+      .overlay{
+        position : fixed;
+        top : 0;
+        bottom : 0;
+        left : 0;
+        right :0;
+        background-color : rgba(0,0,0,0.5);
+        display : flex;
+        justify-content :center;
+        align-items : center;
+      }
+      .model{
+        background-color : white;
+        width : 300px;
+        padding-left : 10px;
+        padding-bottom : 10px;
+        border-radius : 5px;
+      }
+      .title{
+        font-size : 20px;
+        font-weight : bold;
+        margin-bottom : 4px;
+      }
+      .description{
+        margin-bottom :4px;
+        margin-top :0;
+      }
+      .btn{
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left-sidebar">
+      left side bar
+    </div>
+    <div class="overlay">
+      <div class="model">
+        <p class="title"> Modal Title </p>
+        <p class="description"> This is a modal </p>
+        <button class="btn"> close</button>
+      </div>
+    </div>
+  </body>
+</html>
