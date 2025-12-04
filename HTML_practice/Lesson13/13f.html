@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> 13f exercise </title>
+    <style>
+      p{
+        margin :0;
+        padding : 0;
+        font-family : Arial;
+      }
+      .flexbox{
+        display : flex;
+        width : 500px;
+      }
+      .logo{
+        width : 40px;
+      }
+      .profile-picture{
+        width : 40px;
+        height : 40px;
+        border-radius : 20px;
+        object-fit : cover;
+      }
+      .email{
+        width :460px;
+        margin-left : 15px;
+      }
+      .email-id{
+        font-weight : bold;
+        margin-bottom : 5px;
+      }
+
+      .email-from{
+        color : rgb(120,120,120);
+      }
+      .message{
+        font-size : 17px;
+        line-height : 20px;
+        margin-bottom : 10px;
+      }
+      .link{
+        display : flex;
+        flex : 1;
+        border-color : rgb(220,220,220);
+        border-style : solid;
+        border-radius : 20px;
+        overflow: hidden;
+      }
+      .empty{
+        width : 100px;
+        background-color: rgb(220,220,220);
+        
+      }
+      .link-content{
+        padding-left : 10px;
+        padding-left : 6px;
+        padding-bottom : 10px;
+        padding-right : 6px;
+        margin-left : 5px;
+      }
+      .youtube-link{
+        color : rgb(106, 98, 98);
+        margin-bottom : 6px;
+      }
+      .link-description{
+        line-height: 19px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div class="logo"> 
+        <img src="../lesson12/cat.jpg" alt="cat image" class="profile-picture">
+      </div>
+      <div class="email">
+        <p class="email-id">supersimple.dev <span class="email-from">@SuperSimpleDev </span></p>
+        <p class="message">What is backend web development? A complete overview. New video is up!</p>
+        <div class="link">
+          <div class="empty"></div>
+          <div class="link-content">
+            <div class="youtube-link">youtube.com</div>
+            <div class="link-description">Backend wev development - a complete overview (2021)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

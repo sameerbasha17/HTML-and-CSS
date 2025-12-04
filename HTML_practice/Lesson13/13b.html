@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> 13b exercise </title>
+    <style>
+      .flexbox{
+        display : flex;
+        flex-direction : row;
+        height : 50px;
+      }
+      .column1{
+        width : 100px;
+        background-color: pink;
+      }
+      .column2{
+        width: 200px;
+        background-color : rgb(101, 101, 215);
+      }
+      .row2{
+        display : flex;
+        align-items : center;
+        justify-content : space-between;
+      }
+      .item{
+        background-color : black;
+        color : white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div class="column1"></div>
+      <div class="column2">
+        <div class="row1">row 1 </div>
+        <div class="row2">
+          <div class="item"> row 2 </div>
+          <div class="item"> row 2 </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

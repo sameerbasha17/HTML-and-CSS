@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> 13c exercise </title>
+    <style>
+      .container{
+        font-family : Arial;
+        margin-top : 20px;
+        margin-left : 20px;
+        box-shadow : 0 1px 5px rgba(0,0,0,0.15);
+        width : 400px;
+        padding-top: 10px;
+        padding-left : 10px;
+        padding-bottom : 20px;
+        padding-right : 10px;
+      }
+      .inbox{
+        font-size : 14px;
+        color : rgb(140,140,140);
+        margin-bottom : 15px;
+      }
+
+      .flexbox{
+        display : flex;
+        align-items : center;
+      }
+      .logo{
+        width : 50px;
+        
+      }
+      .profile-picture{
+        width : 30px;
+        height : 30px;
+        object-fit : cover;
+        border-radius : 15px; 
+      }
+      .email{
+        width : 350px
+      }
+      .inner-flexbox{
+        display : flex;
+        justify-content : space-between;
+        align-items : center;
+        margin-bottom :4px;
+      }
+      .header{
+        font-weight : bold;
+        font-size : 18px;
+      }
+      .time{
+        font-size : 16px;
+        color : rgb(140,140,140);
+      }
+      .title{
+        font-weight : bold;
+        padding-bottom : 3px;
+      }
+      .message{
+        font-size : 14px;
+        color : rgb(140,140,140);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inbox">ALL INBOXES </div>
+      <div class="flexbox">
+        <div class="logo"> <img src="../lesson12/cat.jpg" alt="cat image" class="profile-picture"></div>
+        <div class="email">
+          <div class="inner-flexbox"><div class="header"> Chewy Promotions </div><div class="time">4:58 PM </div></div>
+          <div class="title"> Biggest sales of the year! </div>
+          <div class="message"> Hey there ! We're writing to tell you about our..</div>
+      </div>
+    </div>
+  </body>
+</html>
