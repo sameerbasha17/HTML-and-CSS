@@ -1,15 +1,56 @@
 .grid{
   display : grid;
-  grid-template-columns : 300px 300px 300px;
+  grid-template-columns : 1fr 1fr 1fr;
   column-gap : 17px;
   row-gap : 40px;
+}
+
+@media (max-width: 700px){
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width : 701px) and (max-width : 999px){
+  .grid{
+    grid-template-columns : 1fr 1fr 1fr;
+  }
+}
+@media (min-width:1000px){
+  .grid{
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+  }
+}
+.thumbnail-div a,.thumbnail-div a:visited,.thumbnail-div a:hover,
+.thumbnail-div a:active,.thumbnail-div a:link {
+  color: black !important;
+  text-decoration: none !important;
+}
+.title-row a,.title-row a:visited,.title-row a:hover,
+.title-row a:active,.title-row a:link {
+  color: black ;
+  text-decoration: none;
 }
 .thumbnail{
   width : 100%;
 }
 .thumbnail-div{
   margin-bottom : 8px;
-  background-color: rgb(216, 30, 30);
+  position : relative;
+}
+.time-stamp{
+  background-color: black;
+  color : white;
+  position : absolute;
+  bottom : 7px;
+  right :4px;
+  padding-top : 2px;
+  padding-left :4px;
+  padding-bottom :2px;
+  padding-right : 4px;
+  border-radius : 2px;
+  font-weight : bold;
+  font-family :Arial;
+  font-size : 14px;
 }
 .sub-grid{
   display : grid;
