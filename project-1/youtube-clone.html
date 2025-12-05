@@ -1,128 +1,302 @@
-<!DOCTYPE.html>
+<!DOCTYPE html>
 <html>
   <head>
     <title> YouTube Clone </title>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/vedio.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="section-1">
         <img src="icons/hamburger-menu.svg" class="hamburger-menu" alt="hamburger-menu">
         <img src="icons/youtube-logo.svg" class="youtube-logo" alt="youtube-logo">
       </div>
       <div class="section-2">
         <input class="text-box" type="text" placeholder="Search">
-        <button class="search-button" ><img src="icons/search.svg" alt="search button" class="search-btn"></button>
-        <button class="voice-button"><img src="icons/voice-search-icon.svg" alt="voice search icon" class="voice-search-icon"></button>
+        <div class="text-box-container">
+          <button class="search-button" ><img src="icons/search.svg" alt="search button" class="search-btn"></button>
+          <div class="tooltip">Search</div>
+        </div>
+        <div class="voice-button-container">
+          <button class="voice-button"><img src="icons/voice-search-icon.svg" alt="voice search icon" class="voice-search-icon"></button>
+          <div class="tooltip">Search with your voice</div>
+        </div>
       </div>
       <div class="section-3">
-        <img src="icons/upload.svg" class="upload-icon" alt="upload icon">
-        <img src="icons/youtube-apps.svg" class="app-icon" alt="app icon">
-        <img src="icons/notifications.svg" class="notifications-icon" alt="notify icon">
+        <div class="upload-container">
+          <img src="icons/upload.svg" class="upload-icon" alt="upload icon">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-container">
+          <img src="icons/youtube-apps.svg" class="app-icon" alt="app icon">
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notification-container">
+          <div class="notify">
+            <img src="icons/notifications.svg" class="notifications-icon" alt="notify icon">
+            <div class="tooltip">Notifications</div>
+          </div>
+          <div class="notification-count">3</div>
+        </div>
         <img src="icons/my-logo.png" class="current-user" alt="user profile">
       </div>
-    </div>
+    </header>
   
+    <nav class=sidebar>
+      <div class="sidebar-link">
+        <img src="icons/home.svg" alt="icon">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" alt="icon">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" alt="icon">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" alt="icon">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" alt="icon">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" alt="icon">
+        <div>Library</div>
+      </div>
+    </nav>
 
-    <div class="grid">
+    <main class="grid">
       <div class="vedio">
         <div class="thumbnail-div">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="image is not ready">
+          <a href="https://youtu.be/7JfsSed5Hsw"><img class="thumbnail" src="thumbnails/thumbnail-1.jpg" alt="image is not ready"></a>
+          <div class="time-stamp">3:15</div>
         </div>
         <div class="sub-grid">
           <div class="profile-row">
-            <img class="profile" src="thumbnails/channel-1.jpeg" alt="profile">
+            <img class="profile" src="channel-logo's/01.jpg" alt="profile">
           </div>
           <div class="title-row">
-            <p class="title" >Talking Tech and AI with Google CEO Sundar Pichai!</p>
-            <p class="author"> Marques Brownlee</p>
-            <p class="stats"> 3.4M views &#183; 6 months ago </p>
+            <a href="https://youtu.be/7JfsSed5Hsw" ><p class="title" >Mix - Hiro & Zero Two {AMV} - Lovely</p></a>
+            <p class="author"> Anime Fanatics</p>
+            <p class="stats"> 76 lakh views &#183; 7 years ago </p>
           </div>
         </div>
       </div>
 
       <div class="vedio">
         <div class="thumbnail-div">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="image is not ready">
+          <a href="https://youtu.be/6zXOLkn4Ggc"> <img class="thumbnail" src="thumbnails/thumbnail-2.jpg" alt="image is not ready"></a>
+          <div class="time-stamp">3:31</div>
         </div>
         <div class="sub-grid">
           <div class="profile-row">
-            <img class="profile" src="thumbnails/channel-1.jpeg" alt="profile">
+            <img class="profile" src="channel-logo's/02.jpg" alt="profile">
           </div>
           <div class="title-row">
-            <p class="title" >Talking Tech and AI with Google CEO Sundar Pichai!</p>
-            <p class="author"> Marques Brownlee</p>
-            <p class="stats"> 3.4M views &#183; 6 months ago </p>
+            <a href="https://youtu.be/6zXOLkn4Ggc"> <p class="title" >Yung Kai - Blue (Lyrics)</p></a>
+            <p class="author"> Fun_Music</p>
+            <p class="stats"> 29 lakh views &#183; 1 year ago </p>
           </div>
         </div>
       </div>
 
       <div class="vedio">
         <div class="thumbnail-div">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="image is not ready">
+          <a href="https://youtu.be/1xOVTXz6HTg"> <img class="thumbnail" src="thumbnails/thumbnail-3.avif" alt="image is not ready"></a>
+          <div class="time-stamp">7:40</div>
         </div>
         <div class="sub-grid">
           <div class="profile-row">
-            <img class="profile" src="thumbnails/channel-1.jpeg" alt="profile">
+            <img class="profile" src="channel-logo's/03.jpg" alt="profile">
           </div>
           <div class="title-row">
-            <p class="title" >Talking Tech and AI with Google CEO Sundar Pichai!</p>
-            <p class="author"> Marques Brownlee</p>
-            <p class="stats"> 3.4M views &#183; 6 months ago </p>
+            <a href="https://youtu.be/1xOVTXz6HTg"> <p class="title" >The 1% Who Never Waste Time</p></a>
+            <p class="author"> Growth Ascent</p>
+            <p class="stats"> 456k views &#183; 3 months ago </p>
           </div>
         </div>
       </div>
 
       <div class="vedio">
         <div class="thumbnail-div">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="image is not ready">
+          <a href="https://youtu.be/G3e-cpL7ofc"><img class="thumbnail" src="thumbnails/thumbnail-4.avif" alt="image is not ready"></a>
+          <div class="time-stamp">6:31:24</div>
         </div>
         <div class="sub-grid">
           <div class="profile-row">
-            <img class="profile" src="thumbnails/channel-1.jpeg" alt="profile">
+            <img class="profile" src="channel-logo's/04.jpg" alt="profile">
           </div>
           <div class="title-row">
-            <p class="title" >Talking Tech and AI with Google CEO Sundar Pichai!</p>
-            <p class="author"> Marques Brownlee</p>
-            <p class="stats"> 3.4M views &#183; 6 months ago </p>
+            <a href="https://youtu.be/G3e-cpL7ofc"> <p class="title" >HTML & CSS Full Course - Beginner to Pro</p></a>
+            <p class="author"> SuperSimpleDev</p>
+            <p class="stats"> 17M views &#183; 3 years ago </p>
           </div>
         </div>
       </div>
 
       <div class="vedio">
         <div class="thumbnail-div">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="image is not ready">
+          <a href="https://youtu.be/3pGAEyVtlwM"><img class="thumbnail" src="thumbnails/thumbnail-5.avif" alt="image is not ready"></a>
+          <div class="time-stamp">3:31</div>
         </div>
         <div class="sub-grid">
           <div class="profile-row">
-            <img class="profile" src="thumbnails/channel-1.jpeg" alt="profile">
+            <img class="profile" src="channel-logo's/05.jpg" alt="profile">
           </div>
           <div class="title-row">
-            <p class="title" >Talking Tech and AI with Google CEO Sundar Pichai!</p>
-            <p class="author"> Marques Brownlee</p>
-            <p class="stats"> 3.4M views &#183; 6 months ago </p>
+            <a href="https://youtu.be/3pGAEyVtlwM"><p class="title" >Hi Nanna: Aigaa | Nani, Mrunal Thakur</p></a>
+            <p class="author"> T-Series Telugu</p>
+            <p class="stats"> 17M views &#183; 1 year ago </p>
           </div>
         </div>
       </div>
 
       <div class="vedio">
         <div class="thumbnail-div">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="image is not ready">
+          <a href="https://youtu.be/8nKJCNgiVhc?list=RD8nKJCNgiVhc"> <img class="thumbnail" src="thumbnails/thumbnail-6.jpg" alt="image is not ready"></a>
+          <div class="time-stamp">3:03</div>
         </div>
         <div class="sub-grid">
           <div class="profile-row">
-            <img class="profile" src="thumbnails/channel-1.jpeg" alt="profile">
+            <img class="profile" src="channel-logo's/06.jpg" alt="profile">
           </div>
           <div class="title-row">
-            <p class="title" >Talking Tech and AI with Google CEO Sundar Pichai!</p>
-            <p class="author"> Marques Brownlee</p>
-            <p class="stats"> 3.4M views &#183; 6 months ago </p>
+            <a href="https://youtu.be/8nKJCNgiVhc?list=RD8nKJCNgiVhc"> <p class="title" >Enemy「AMV」Anime Mix</p></a>
+            <p class="author"> TumpyGFX</p>
+            <p class="stats"> 52M views &#183; 3 years ago </p>
           </div>
         </div>
       </div>
-    </div>
+
+       <div class="vedio">
+        <div class="thumbnail-div">
+          <a href="https://youtu.be/YI5Qvg0aaxU"><img class="thumbnail" src="thumbnails/thumbnail-7.avif" alt="image is not ready"></a>
+          <div class="time-stamp">5:17</div>
+        </div>
+        <div class="sub-grid">
+          <div class="profile-row">
+            <img class="profile" src="channel-logo's/07.jpg" alt="profile">
+          </div>
+          <div class="title-row">
+            <a href="https://youtu.be/YI5Qvg0aaxU"><p class="title" >Narayana Engineering College, Nellore - Instructional Area</p></a>
+            <p class="author"> necntv</p>
+            <p class="stats"> 851 views &#183; 7 months ago </p>
+          </div>
+        </div>
+      </div>
+
+       <div class="vedio">
+        <div class="thumbnail-div">
+          <a href="https://youtu.be/SkT8tDy45fU"><img class="thumbnail" src="thumbnails/thumbnail-8.avif" alt="image is not ready"></a>
+          <div class="time-stamp">9:43</div>
+        </div>
+        <div class="sub-grid">
+          <div class="profile-row">
+            <img class="profile" src="channel-logo's/08.jpg" alt="profile">
+          </div>
+          <div class="title-row">
+            <a href="https://youtu.be/SkT8tDy45fU"><p class="title" >How I started coding from 0 and cracked Amazon, Google ...</p></a>
+            <p class="author"> Ashish Pratap Singh</p>
+            <p class="stats"> 735k views &#183; 2 years ago </p>
+          </div>
+        </div>
+      </div>
+
+       <div class="vedio">
+        <div class="thumbnail-div">
+          <a href="https://youtu.be/QU8mTR5iPLM"><img class="thumbnail" src="thumbnails/thumbnail-9.avif" alt="image is not ready"></a>
+          <div class="time-stamp">10:25</div>
+        </div>
+        <div class="sub-grid">
+          <div class="profile-row">
+            <img class="profile" src="channel-logo's/09.jpg" alt="profile">
+          </div>
+          <div class="title-row">
+            <a href="https://youtu.be/QU8mTR5iPLM"><p class="title" >Calisthenics vs Gym: Which Is More Effective?</p></a>
+            <p class="author"> Captain Workout</p>
+            <p class="stats"> 2.4M views &#183; 3 months ago </p>
+          </div>
+        </div>
+      </div>
+
+       <div class="vedio">
+        <div class="thumbnail-div">
+          <a href="https://youtu.be/0IAPZzGSbME?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O"><img class="thumbnail" src="thumbnails/thumbnail-10.jpg" alt="image is not ready"></a>
+          <div class="time-stamp">11:48</div>
+        </div>
+        <div class="sub-grid">
+          <div class="profile-row">
+            <img class="profile" src="channel-logo's/10.jpg" alt="profile">
+          </div>
+          <div class="title-row">
+            <a href="https://youtu.be/0IAPZzGSbME?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O"><p class="title" >1. Introduction to Algorithms</p></a>
+            <p class="author"> Abdul Bari</p>
+            <p class="stats"> 6.7M views &#183; 7 years ago </p>
+          </div>
+        </div>
+      </div>
+
+       <div class="vedio">
+        <div class="thumbnail-div">
+          <a href="https://youtu.be/NeXbmEnpSz0?list=RDNeXbmEnpSz0"><img class="thumbnail" src="thumbnails/thumbnail-11.avif" alt="image is not ready"></a>
+          <div class="time-stamp">3:27</div>
+        </div>
+        <div class="sub-grid">
+          <div class="profile-row">
+            <img class="profile" src="channel-logo's/11.jpg" alt="profile">
+          </div>
+          <div class="title-row">
+            <a href="https://youtu.be/NeXbmEnpSz0?list=RDNeXbmEnpSz0"><p class="title" >Zara Zara Bahekta Hai | JalRAj | RHTDM | Male Version<p></a>
+            <p class="author">JalRaj</p>
+            <p class="stats"> 398M views &#183; 5 years ago </p>
+          </div>
+        </div>
+      </div>
+
+       <div class="vedio">
+        <div class="thumbnail-div">
+          <a href="https://youtu.be/BiZ62Nd7wtc"><img class="thumbnail" src="thumbnails/thumbnail-12.avif" alt="image is not ready"></a>
+          <div class="time-stamp">2:04:39</div>
+        </div>
+        <div class="sub-grid">
+          <div class="profile-row">
+            <img class="profile" src="channel-logo's/12.jpg" alt="profile">
+          </div>
+          <div class="title-row">
+            <a href="https://youtu.be/BiZ62Nd7wtc"><p class="title" >The Social Network (Telugu Dubbed) Movie</p></a>
+            <p class="author"> ABCD</p>
+            <p class="stats"> 29k views &#183; 3 years ago </p>
+          </div>
+        </div>
+      </div>
+
+       <div class="vedio">
+        <div class="thumbnail-div">
+          <a href="https://youtu.be/O5Ug2biJe0s"><img class="thumbnail" src="thumbnails/thumbnail-13.avif" alt="image is not ready"></a>
+          <div class="time-stamp">3:31</div>
+        </div>
+        <div class="sub-grid">
+          <div class="profile-row">
+            <img class="profile" src="channel-logo's/13.jpg" alt="profile">
+          </div>
+          <div class="title-row">
+            <a href="https://youtu.be/O5Ug2biJe0s"><p class="title" >Java quiz easy questions 2025 || Till i win java series</p></a>
+            <p class="author"> Shaik Sameer Basha</p>
+            <p class="stats"> 4 views &#183; 2 weeks ago </p>
+          </div>
+        </div>
+      </div>
+
+    </main>
   </body>
 </html>
   
