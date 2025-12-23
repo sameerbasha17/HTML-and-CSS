@@ -6,10 +6,12 @@ I have developed the interface of youtube, still it need some adjustments but i 
 
 It's really a good feeling to learn new topics and apply them through realworld projects... From 2 weeks i have been stick with my laptop to develop this youtube clone 😅. I observed that my brain asking dopamine which is generated while i am coding rather than doing unproductive work.
 
+Here is the deployed link of webpage : youtube-clone-sksameerbasha.netlify.app
+
 HERE IS MY YOUTUBE CLONE INTERFACE : 
 
 <img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/5cffce32-cd0e-4c18-8155-14f92bb00484" />
 
 
 Thank you to SuperSimple.dev and my teachers...
-I'm looking forward to develop another project like this 😁.
+This may be a copy of someone's code but i understanded the concepts involved.
