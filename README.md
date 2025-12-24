@@ -6,7 +6,7 @@ I have developed the interface of youtube, still it need some adjustments but i 
 
 It's really a good feeling to learn new topics and apply them through realworld projects... From 2 weeks i have been stick with my laptop to develop this youtube clone 😅. I observed that my brain asking dopamine which is generated while i am coding rather than doing unproductive work.
 
-Here is the deployed link of webpage : youtube-clone-sksameerbasha.netlify.app
+Here is the deployed link of webpage : https://youtube-clone-sksameerbasha.netlify.app
 
 HERE IS MY YOUTUBE CLONE INTERFACE : 
 
